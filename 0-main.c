@@ -13,7 +13,7 @@ int main(void)
 	_putchar('\n');
 
 	//write(1,"OWN PRINTF\n", 19);
-	int n = _printf("Buddy is 'A'\n");
+	int n = _printf("Buddy is %c\n", 'A');
 	_putchar(n + '0');
 
 	_putchar('\n');

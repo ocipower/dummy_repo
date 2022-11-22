@@ -2,16 +2,18 @@
 
 int (*check_specifier(const char *format))(va_list)
 {
+	int i;
 	func_t option[] = {
-		{"c", print_char.c},
-		{"s", print_str.c},
-		{"%", print_pcent.c},
+		{"c", print_char},
+		{"s", print_str},
+		{"%", print_pcent},
 		{NULL, NULL}
 	};
 	
-	while(option[i].name != NULL)
+	i = 0;
+	while(option[i].t != NULL)
 	{
-		if (*(option[i].name) == *format)
-			return (option[i].f)
+		if (*(option[i].t) == *format)
+			return (option[i].f);
 	}
 }
