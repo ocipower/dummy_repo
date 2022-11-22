@@ -8,12 +8,12 @@
 int main(void)
 {
 	//write(1,"STANDARD PRINTF\n", 16);	
-	printf("Buddy\n");
+	printf("Buddy %c\n", 'A');
 
 	_putchar('\n');
 
 	//write(1,"OWN PRINTF\n", 19);
-	int n = _printf("Buddy\n");
+	int n = _printf("Buddy is 'A'\n");
 	_putchar(n + '0');
 
 	_putchar('\n');
